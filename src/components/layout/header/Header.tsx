@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BarsOutlined } from '@ant-design/icons';
+import { BarsOutlined, CloseOutlined } from '@ant-design/icons';
 import Menu from './Menu';
 
 const navbar = [
@@ -30,7 +30,7 @@ const Header = () => {
 	return (
 		<>
 			{menu && <Menu setOpen={setMenu} navigation={navbar} />}
-			<header className='w-full fixed z-10 p-4 bg-transparent backdrop-blur-md'>
+			<header className='w-full fixed z-10 p-4 bg-dark-gray opacity-80 backdrop-blur-md'>
 				<div className='layout-container flex justify-between items-center'>
 					<img src='' alt='leoda-Logo' className='object-cover' />
 					<section>
@@ -47,8 +47,12 @@ const Header = () => {
 							</ul>
 						</nav>
 						<div className='lg:hidden flex m-1'>
-							<button onClick={() => setMenu(true)}>
-								<BarsOutlined className='text-orange text-2xl' />
+							<button onClick={() => setMenu(!menu)}>
+								{menu ? (
+									<CloseOutlined className='text-orange text-2xl' />
+								) : (
+									<BarsOutlined className='text-orange text-2xl' />
+								)}
 							</button>
 						</div>
 					</section>
