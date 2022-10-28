@@ -1,18 +1,17 @@
 import { useState } from 'react';
 import { GithubFilled, LinkedinFilled } from '@ant-design/icons';
-import { Link } from 'wouter';
 
 const Social = () => {
 	const [social] = useState([
 		{
 			title: 'Github',
 			icon: <GithubFilled />,
-			to: 'https://github.com/LeoD-E1'
+			to: 'https://github.com/LeoD-E1',
 		},
 		{
 			title: 'Instagram',
 			icon: <LinkedinFilled />,
-			to: 'https://www.linkedin.com/in/leodadev/'
+			to: 'https://www.linkedin.com/in/leodadev/',
 		},
 	]);
 
@@ -21,7 +20,7 @@ const Social = () => {
 			{social.map(item => (
 				<div className='mx-1'>
 					<a href={item.to}>
-					{item.icon}
+						<span className='text-3xl hover:text-orange'>{item.icon}</span>
 					</a>
 				</div>
 			))}

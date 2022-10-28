@@ -22,11 +22,13 @@ module.exports = {
 			'dark-gray': '#1F2731',
 			gray: '#8492a6',
 			'gray-light': '#d3dce6',
+			'middle-gray': '#596570',
 			white: '#fff',
 			black: '#000',
 		},
 		fontFamily: {
 			sans: ['Graphik', 'sans-serif'],
+			sora: ['Sora', 'sans-serif'],
 			serif: ['Merriweather', 'serif'],
 		},
 		extend: {

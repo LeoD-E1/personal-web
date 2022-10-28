@@ -2,12 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-  font-family:'Expletus Sans';
-  src: url(/fonts/Expletus_Sans/ExpletusSans-VariableFont_wght.ttf) format('truetype');
+@font-face {
+  font-family:'Sora';
+  src: url(/public/fonts/Sora/Sora-Medium.ttf) format('truetype');
   font-weight: bold;
   font-style: normal;
-} */
+}
+
+@layer base {
+  body {
+    @apply font-sora;
+  }
+  p, h1, h2, h3, h4, h5, h6{
+    color: theme('colors.middle-gray');
+  }
+}
 
 @layer components {
   .layout-container {
@@ -24,7 +33,7 @@
     padding: 5px 30px;
     background-color: theme('colors.transparent');
     color: #fff;
-    border-radius: 5px;
+    border-radius: 50px;
     display: inline-block;
     position: relative;
     border: 2px solid theme('colors.orange');

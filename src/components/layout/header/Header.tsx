@@ -30,9 +30,9 @@ const Header = () => {
 	return (
 		<>
 			{menu && <Menu setOpen={setMenu} navigation={navbar} />}
-			<header className='w-full fixed z-10 p-4 bg-dark-gray opacity-80 backdrop-blur-md'>
-				<div className='layout-container flex justify-between items-center'>
-					<img src='' alt='leoda-Logo' className='object-cover' />
+			<header className='my-5 z-10 fixed flex justify-center w-full'>
+				<div className=' max-w-2xl flex justify-center items-center bg-dark-gray rounded-full p-4'>
+					{/* <img src='' alt='leoda-Logo' className='object-cover' /> */}
 					<section>
 						<nav className='hidden lg:flex'>
 							<ul className='flex justify-around items-center'>
