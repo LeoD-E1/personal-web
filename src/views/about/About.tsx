@@ -24,6 +24,8 @@ const About = () => {
 							I'm a self-taught person, perseverant and creative. Fan of manga,
 							anime, boxing, reading.
 						</p>
+						<br />
+						<p>Interested in the</p>
 					</div>
 				</div>
 			</div>
