@@ -1,31 +1,22 @@
-import leo from '../../assets/leonardo.jpg';
-
 const About = () => {
 	return (
 		<div className='h-[100vh]'>
 			<div className='flex h-full'>
-				<div className='flex justify-center items-center w-[50%] bg-dark-gray'>
-					<img
-						src={leo}
-						alt='leoda-image'
-						className=' object-cover h-full w-full'
-					/>
-				</div>
+				<div className='w-[50%] bg-leoda bg-fixed bg-no-repeat bg-fill bg-left'></div>
 				<div className='flex justify-center items-center w-[50%] text-white bg-dark-gray'>
 					<div className='p-10'>
 						<h4 className='text-2xl text-orange'>about me</h4>
-						<p>
+						<p className='text-gray'>
 							Hello, nice to meet you! My name is Leonardo, i'm a Front-End
 							developer from Argentina. I enjoy creating things, solving
 							problems and improving the user experience with my habilities.
-						</p>
-						<br />
-						<p>
+							<br />
+							<br />
 							I'm a self-taught person, perseverant and creative. Fan of manga,
 							anime, boxing, reading.
+							<br />
+							<br />
 						</p>
-						<br />
-						<p>Interested in the</p>
 					</div>
 				</div>
 			</div>

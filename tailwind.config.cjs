@@ -32,6 +32,9 @@ module.exports = {
 			serif: ['Merriweather', 'serif'],
 		},
 		extend: {
+			backgroundImage: {
+				leoda: "url('./src/assets/leonardo.jpg')",
+			},
 			keyframes: {
 				blink: {
 					'0%': { opacity: 1 },
