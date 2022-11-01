@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import leodaLogo from '../../../../public/favicon-leoda.svg';
 import { BarsOutlined, CloseOutlined } from '@ant-design/icons';
 import Menu from './Menu';
 
@@ -30,9 +32,13 @@ const Header = () => {
 	return (
 		<>
 			{menu && <Menu setOpen={setMenu} navigation={navbar} />}
-			<header className='my-5 z-10 fixed flex justify-center w-full'>
-				<div className=' max-w-2xl flex justify-center items-center bg-dark-gray rounded-full p-4'>
-					{/* <img src='' alt='leoda-Logo' className='object-cover' /> */}
+			<header className='z-20 w-full fixed bg-dark-gray bg-opacity-90 p-1'>
+				<motion.div
+					initial={{ x: -100, opacity: 0 }}
+					animate={{ x: 0, opacity: 1 }}
+					className='layout-container flex justify-between items-center'
+				>
+					<img src={leodaLogo} alt='leoda-Logo' className='object-cover' />
 					<section>
 						<nav className='hidden lg:flex'>
 							<ul className='flex justify-around items-center'>
@@ -56,7 +62,7 @@ const Header = () => {
 							</button>
 						</div>
 					</section>
-				</div>
+				</motion.div>
 			</header>
 		</>
 	);

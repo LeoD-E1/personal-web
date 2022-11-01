@@ -4,7 +4,7 @@ const About = () => {
 			<div className='flex h-full'>
 				<div className='w-[50%] bg-leoda bg-cover bg-center'></div>
 				<div className='flex justify-center items-center w-[50%] text-white bg-dark-gray'>
-					<div className='p-10'>
+					<div className='p-10 max-w-2xl'>
 						<h4 className='text-2xl text-orange'>about me</h4>
 						<p className='text-gray'>
 							Hello, nice to meet you! My name is Leonardo, i'm a Front-End
