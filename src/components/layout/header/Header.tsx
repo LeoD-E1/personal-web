@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import leodaLogo from '../../../../public/favicon-leoda.svg';
+import leodaLogo from '/favicon-leoda.svg';
 import { BarsOutlined, CloseOutlined } from '@ant-design/icons';
 import Menu from './Menu';
 

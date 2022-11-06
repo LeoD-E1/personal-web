@@ -7,7 +7,7 @@ const Services = () => {
 			title: 'Front-End',
 			icon: <FileImageOutlined />,
 			description:
-				'Build client-side applications with modern features like SPA and maintain semantic coding style among other best practices for SEO optimisation. Use modern tech such as React JS, NextJS, TailwindCSS, and Framer motion.',
+				'Build client-side applications with modern features like SPA and maintain semantic coding style among other best practices. Use modern tech such as React JS, NextJS, TailwindCSS, and Framer motion.',
 		},
 		{
 			title: 'Back-End',

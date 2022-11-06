@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../../public/favicon-leoda.svg';
+import logo from '/favicon-leoda.svg';
 
 const Footer = () => {
 	return (
