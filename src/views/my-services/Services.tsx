@@ -34,8 +34,8 @@ const Services = () => {
 						<h5>Service offers</h5>
 					</div>
 
-					{services.map(service => (
-						<div className='md:flex md:items-start md:-mx-4'>
+					{services.map((service, i) => (
+						<div key={i} className='md:flex md:items-start md:-mx-4'>
 							<span className='inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500'>
 								{service.icon}
 							</span>

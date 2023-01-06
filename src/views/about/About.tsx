@@ -1,9 +1,18 @@
+import leoda from '../../assets/leonardo.jpg';
+
 const About = () => {
 	return (
-		<div className='h-[100vh]'>
+		<div className='h-screen'>
 			<div className='flex h-full'>
-				<div className='w-[50%] bg-leoda bg-cover bg-center'></div>
-				<div className='flex justify-center items-center w-[50%] text-white bg-dark-gray'>
+				<div className='hidden md:block w-[50%] md:bg-leoda bg-cover bg-center'></div>
+				<div className='w-full flex flex-col md:flex-row justify-center items-center md:w-[50%] text-white bg-dark-gray'>
+					<div className='md:hidden relative w-[200px] h-[200px] flex'>
+						<img
+							className='rounded-full object-cover w-full h-full'
+							src={leoda}
+							alt='leonardo-d-angeli'
+						/>
+					</div>
 					<div className='p-10 max-w-2xl'>
 						<h4 className='text-2xl text-orange'>about me</h4>
 						<p className='text-gray'>

@@ -21,7 +21,7 @@ const Welcome = () => {
 					</div>
 					<Social />
 				</section>
-				<section>
+				<section className='hidden lg:flex'>
 					<img src={basic} alt='html-css-js' />
 				</section>
 			</div>
