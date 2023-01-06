@@ -18,7 +18,7 @@ const Social = () => {
 	return (
 		<div className='flex'>
 			{social.map(item => (
-				<div className='mx-1'>
+				<div key={item.title} className='mx-1'>
 					<a href={item.to}>
 						<span className='text-3xl hover:text-orange'>{item.icon}</span>
 					</a>

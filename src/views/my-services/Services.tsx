@@ -1,42 +1,42 @@
 import { useState } from 'react';
-import { FileImageOutlined } from '@ant-design/icons';
+import { RightCircleFilled } from '@ant-design/icons';
 
 const Services = () => {
 	const [services] = useState([
 		{
 			title: 'Front-End',
-			icon: <FileImageOutlined />,
+			icon: <RightCircleFilled />,
 			description:
 				'Build client-side applications with modern features like SPA and maintain semantic coding style among other best practices. Use modern tech such as React JS, NextJS, TailwindCSS, and Framer motion.',
 		},
 		{
 			title: 'Back-End',
-			icon: <FileImageOutlined />,
+			icon: <RightCircleFilled />,
 			description:
 				'Build scalable and maintainable server applications using modern stacks such as Node.js, Express, and MongoDB.',
 		},
 		{
 			title: 'Native',
-			icon: <FileImageOutlined />,
+			icon: <RightCircleFilled />,
 			description:
 				'Use React Native for building simple native mobile applications. RN is modern, fast, cross-platform, and popular.',
 		},
 	]);
 
 	return (
-		<section className='bg-white dark:bg-gray-900  flex items-center justify-center h-[100vh]'>
+		<section className='bg-white dark:bg-gray-900 flex items-center justify-center h-screen'>
 			<div className='lg:flex lg:items-center'>
 				<div className='max-w-xl space-y-12 lg:w-1/2 '>
-					<div>
+					<div className='flex flex-col items-center '>
 						<h1 className='text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white'>
 							What I Can Do
 						</h1>
-						<h5>Service offers</h5>
+						<h5 className='text-lg'>Service offers</h5>
 					</div>
 
 					{services.map((service, i) => (
-						<div key={i} className='md:flex md:items-start md:-mx-4'>
-							<span className='inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500'>
+						<div key={i} className='flex items-start text-sm md:text-lg'>
+							<span className='inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4'>
 								{service.icon}
 							</span>
 
