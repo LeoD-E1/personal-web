@@ -10,7 +10,7 @@ const Menu = (props: any) => {
 				animate={{ x: 0 }}
 				initial={false}
 			>
-				<div className='fixed h-full md:max-w-sm w-full bg-dark-gray shadow-xl flex flex-col overflow-y-auto bg-opacity-95'>
+				<div className='fixed h-full md:max-w-sm w-full bg-dark-gray shadow-xl flex flex-col overflow-y-auto bg-opacity-90 backdrop-blur'>
 					<CloseCircleOutlined
 						className='text-3xl text-orange absolute right-6 top-3 hover:text-white'
 						onClick={() => setOpen(false)}

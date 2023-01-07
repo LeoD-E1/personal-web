@@ -32,7 +32,7 @@ const Header = () => {
 	return (
 		<>
 			{menu && <Menu setOpen={setMenu} navigation={navbar} />}
-			<header className='z-20 w-full fixed bg-dark-gray bg-opacity-90 p-1'>
+			<header className='z-20 w-full fixed bg-dark-gray bg-opacity-90 p-1 backdrop-blur'>
 				<motion.div
 					initial={{ x: -100, opacity: 0 }}
 					animate={{ x: 0, opacity: 1 }}
