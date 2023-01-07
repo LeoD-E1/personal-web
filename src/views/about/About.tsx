@@ -4,7 +4,13 @@ const About = () => {
 	return (
 		<div className='h-screen'>
 			<div className='flex h-full'>
-				<div className='hidden md:block w-[50%] md:bg-leoda bg-cover bg-center'></div>
+				<div className='hidden md:block w-[50%] bg-cover bg-center'>
+					<img
+						className='object-cover w-full h-full'
+						src={leoda}
+						alt='leonardo-d-angeli'
+					/>
+				</div>
 				<div className='w-full flex flex-col md:flex-row justify-center items-center md:w-[50%] text-white bg-dark-gray'>
 					<div className='md:hidden relative w-[200px] h-[200px] flex'>
 						<img
