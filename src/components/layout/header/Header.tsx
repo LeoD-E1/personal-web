@@ -54,11 +54,7 @@ const Header = () => {
 						</nav>
 						<div className='lg:hidden flex m-1'>
 							<button onClick={() => setMenu(!menu)}>
-								{menu ? (
-									<CloseOutlined className='text-orange text-2xl' />
-								) : (
-									<BarsOutlined className='text-orange text-2xl' />
-								)}
+								{!menu && <BarsOutlined className='text-orange text-2xl' />}
 							</button>
 						</div>
 					</section>
