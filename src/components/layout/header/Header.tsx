@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import leodaLogo from '/favicon-leoda.svg';
 import { BarsOutlined, CloseOutlined } from '@ant-design/icons';
 import Menu from './Menu';
+import { Link } from 'react-router-dom';
 
 const navbar = [
 	{
@@ -28,6 +29,8 @@ const navbar = [
 ];
 
 const Header = () => {
+	const resumeUrl =
+		'https://drive.google.com/file/d/1I-Mqnq02SG0mQpaNJrWwiemK3ojtpXVd/view?usp=sharing';
 	const [menu, setMenu] = useState<Boolean>(false);
 	return (
 		<>
@@ -49,7 +52,9 @@ const Header = () => {
 										</a>
 									</li>
 								))}
-								<button className='btn-common'>resume</button>
+								<a href={resumeUrl} className='btn-common' target='_blank'>
+									resume
+								</a>
 							</ul>
 						</nav>
 						<div className='lg:hidden flex m-1'>
