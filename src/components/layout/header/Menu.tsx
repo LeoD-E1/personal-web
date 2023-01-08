@@ -8,7 +8,7 @@ const Menu = (props: any) => {
 	return (
 		<>
 			<motion.div
-				className='relative z-40 lg:hidden'
+				className='relative z-10 lg:hidden'
 				animate={{ x: 0 }}
 				initial={false}
 			>

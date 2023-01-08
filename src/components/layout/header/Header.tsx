@@ -34,12 +34,8 @@ const Header = () => {
 	return (
 		<>
 			{menu && <Menu setOpen={setMenu} navigation={navbar} />}
-			<header className='z-20 w-full fixed bg-dark-gray bg-opacity-90 p-1 backdrop-blur'>
-				<motion.div
-					initial={{ x: -100, opacity: 0 }}
-					animate={{ x: 0, opacity: 1 }}
-					className='layout-container flex justify-between items-center'
-				>
+			<header className='w-full relative bg-dark-gray bg-opacity-90 p-1 backdrop-blur'>
+				<div className='layout-container flex justify-between items-center'>
 					<img src={leodaLogo} alt='leoda-Logo' className='object-cover' />
 					<section>
 						<nav className='hidden lg:flex'>
@@ -62,7 +58,7 @@ const Header = () => {
 							</button>
 						</div>
 					</section>
-				</motion.div>
+				</div>
 			</header>
 		</>
 	);
