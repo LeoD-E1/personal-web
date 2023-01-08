@@ -3,6 +3,8 @@ import { CloseCircleOutlined } from '@ant-design/icons';
 
 const Menu = (props: any) => {
 	const { setOpen, navigation } = props;
+	const resumeUrl =
+		'https://drive.google.com/file/d/1I-Mqnq02SG0mQpaNJrWwiemK3ojtpXVd/view?usp=sharing';
 	return (
 		<>
 			<motion.div
@@ -29,6 +31,11 @@ const Menu = (props: any) => {
 								</a>
 							</div>
 						))}
+						<div className='w-full flex justify-center'>
+							<a href={resumeUrl} className='btn-common' target='_blank'>
+								resume
+							</a>
+						</div>
 					</div>
 				</div>
 			</motion.div>
