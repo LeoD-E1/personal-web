@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import leodaLogo from '/favicon-leoda.svg';
-import { BarsOutlined, CloseOutlined } from '@ant-design/icons';
+import { BarsOutlined } from '@ant-design/icons';
 import Menu from './Menu';
-import { Link } from 'react-router-dom';
 
 const navbar = [
 	{
@@ -14,7 +13,7 @@ const navbar = [
 	{
 		id: 1,
 		title: 'works',
-		link: '',
+		link: '/works',
 	},
 	{
 		id: 2,
