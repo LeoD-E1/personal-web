@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { RightCircleFilled } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
 	const [services] = useState([
@@ -24,9 +25,9 @@ const Services = () => {
 	]);
 
 	return (
-		<section className='bg-white dark:bg-gray-900 flex items-center justify-center h-screen'>
+		<section className='bg-white dark:bg-gray-900 flex items-center justify-center h-screen flex-col'>
 			<div className='lg:flex lg:items-center'>
-				<div className='max-w-xl space-y-12 lg:w-1/2 '>
+				<div className='max-w-xl space-y-12 lg:w-1/2 flex flex-col '>
 					<div className='flex flex-col items-center '>
 						<h1 className='text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white'>
 							What I Can Do
@@ -35,7 +36,7 @@ const Services = () => {
 					</div>
 
 					{services.map((service, i) => (
-						<div key={i} className='flex items-start text-sm md:text-lg'>
+						<div key={i} className='flex items-start text-sm'>
 							<span className='inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4'>
 								{service.icon}
 							</span>
@@ -51,6 +52,14 @@ const Services = () => {
 							</div>
 						</div>
 					))}
+					<div className='flex justify-center'>
+						<Link
+							to='/works'
+							className='btn-common text-dark-gray border-dark-gray'
+						>
+							view more
+						</Link>
+					</div>
 				</div>
 
 				<div className='hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center'>

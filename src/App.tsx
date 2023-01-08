@@ -1,12 +1,13 @@
-import Welcome from './views/Welcome';
-import './style/App.css';
-import Home from './views/Home';
+import { routes } from './views';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
 	return (
-		<div className='App'>
-			<Home />
-		</div>
+		<Routes>
+			{routes.map(data => (
+				<Route path={data.path} element={data.component()} key={data.path} />
+			))}
+		</Routes>
 	);
 }
 

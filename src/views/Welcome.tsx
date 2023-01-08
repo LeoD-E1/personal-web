@@ -1,14 +1,11 @@
 import Social from '../components/Social';
 import { motion } from 'framer-motion';
 import basic from '../assets/basic-technologies.svg';
+import { Link } from 'react-router-dom';
 
 const Welcome = () => {
 	return (
-		<motion.div
-			initial={{ x: -100 }}
-			animate={{ x: 0 }}
-			className='w-full h-[100vh]'
-		>
+		<motion.div initial={{ x: -100 }} animate={{ x: 0 }} className='h-screen'>
 			<div className='h-full layout-container flex justify-around items-center'>
 				<section>
 					<p className='text-2xl'>Hi, i'm</p>

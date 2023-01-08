@@ -5,7 +5,7 @@ import About from './about/About';
 import Services from './my-services/Services';
 import Welcome from './Welcome';
 
-const Home: React.FC = () => {
+const Home = () => {
 	return (
 		<>
 			<Header />

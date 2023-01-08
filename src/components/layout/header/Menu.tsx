@@ -4,7 +4,7 @@ import { CloseCircleOutlined } from '@ant-design/icons';
 const Menu = (props: any) => {
 	const { setOpen, navigation } = props;
 	const resumeUrl =
-		'https://drive.google.com/file/d/1I-Mqnq02SG0mQpaNJrWwiemK3ojtpXVd/view?usp=sharing';
+		'https://drive.google.com/file/d/15FpVV5xdjEbMlVNqI3FqDxZtJyDPdDqR/view?usp=sharing';
 	return (
 		<>
 			<motion.div
