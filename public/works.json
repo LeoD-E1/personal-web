@@ -64,5 +64,16 @@
 		"images": [],
 		"description": "Giff application created for practice React concepts.",
 		"date": "24-05-2022"
+	},
+	{
+		"id": 7,
+		"active": true,
+		"topics": ["react", "javascript"],
+		"name": "Pos Food System",
+		"link": "https://leoda-pos-system.vercel.app/",
+		"portrait": "",
+		"images": [],
+		"description": "It will be a Pos Food System for tiny locals of food, my aim is that its has anothe sell point.",
+		"date": "24-05-2022"
 	}
 ]
