@@ -20,7 +20,7 @@ const Works = () => {
 
 	const getWorks = async () => {
 		try {
-			const response = await fetch('/public/works.json');
+			const response = await fetch('/works.json');
 			const data: Work[] = await response.json();
 			setWorks(data);
 		} catch (error) {
