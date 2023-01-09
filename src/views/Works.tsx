@@ -5,6 +5,8 @@ import leoda from '../assets/leoda.gif';
 
 interface Work {
 	id: number;
+	topics: string[];
+	active: boolean;
 	name: string;
 	link: string;
 	portrait: string;
@@ -46,30 +48,43 @@ const Works = () => {
 			<Header />
 			<div className='p-2 flex flex-col items-center justify-center'>
 				<div className='max-w-xl grid grid-cols-1 lg:grid-cols-2 gap-4 my-3 lg:max-w-5xl'>
-					<div className='w-full flex justify-center items-center my-4'>
+					<div className='w-full flex justify-center items-center my-4 flex-col'>
 						<h1 className='font-sora font-bold text-5xl text-dark-gray'>
 							Projects
 						</h1>
+						<span className='text-sm font-sora text-orange max-w-sm my-2 px-2'>
+							Some projects are down because their backend was deployed on
+							heroku and heroku removed their free plan.
+						</span>
 					</div>
-					{works.map(work => (
+					{works.map((work: Work) => (
 						<div
-							className={`rounded-xl shadow-xl bg-cover hover:cursor-default h-full w-full row-span-2`}
+							key={work.id}
+							className={`rounded-xl shadow-xl hover:shadow-2xl bg-cover hover:cursor-default h-full w-full row-span-2`}
 							style={{
 								backgroundImage: `url(${work.portrait || leoda})`,
 							}}
 						>
-							<a href={work.link} target='_blank'>
-								<div className='h-full w-full hover:bg-opacity-50 hover:bg-black rounded-xl p-10'>
+							<div
+								className={`min-h-[300px] h-full w-full bg-opacity-50 ${
+									work.active ? 'hover:bg-opacity-10' : ''
+								} bg-black rounded-xl p-10`}
+							>
+								{work.active ? (
+									<a
+										href={work.active ? work.link : ''}
+										target='_blank'
+										className={!work.active ? 'cursor-not-allowed' : ''}
+									>
+										<h1 className='text-2xl text-white py-3 hover:underline'>
+											{work.name}
+										</h1>
+									</a>
+								) : (
 									<h1 className='text-2xl text-white py-3'>{work.name}</h1>
-									<p className='text-white text-sm'>
-										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-										Veniam asperiores tempora deleniti sit, saepe possimus,
-										voluptas quam magni facere mollitia inventore ipsam
-										voluptate nostrum doloribus necessitatibus. A magni est
-										accusamus.
-									</p>
-								</div>
-							</a>
+								)}
+								<p className='text-white text-sm'>{work.description}</p>
+							</div>
 						</div>
 					))}
 				</div>
