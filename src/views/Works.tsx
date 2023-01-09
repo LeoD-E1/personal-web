@@ -66,7 +66,7 @@ const Works = () => {
 							}}
 						>
 							<div
-								className={`min-h-[300px] h-full w-full bg-opacity-50 ${
+								className={`flex flex-col justify-around min-h-[300px] h-full w-full bg-opacity-50 ${
 									work.active ? 'hover:bg-opacity-10' : ''
 								} bg-black rounded-xl p-10`}
 							>
@@ -83,7 +83,17 @@ const Works = () => {
 								) : (
 									<h1 className='text-2xl text-white py-3'>{work.name}</h1>
 								)}
-								<p className='text-white text-sm'>{work.description}</p>
+								<p className='text-white text-sm my-2'>{work.description}</p>
+								<div className='flex w-full justify-start items-center'>
+									{work.topics.map((topic, i) => (
+										<div
+											className='bg-white text-sm py-1 px-2 text-black mx-1 rounded-xl'
+											key={i}
+										>
+											{topic}
+										</div>
+									))}
+								</div>
 							</div>
 						</div>
 					))}

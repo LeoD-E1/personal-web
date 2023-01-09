@@ -48,7 +48,7 @@ const Header = () => {
 									</li>
 								))}
 								<a href={resumeUrl} className='btn-common' target='_blank'>
-									resume
+									My resume
 								</a>
 							</ul>
 						</nav>

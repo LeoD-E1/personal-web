@@ -75,5 +75,16 @@
 		"images": [],
 		"description": "It will be a Pos Food System for small food stores, my goal is to have another point of sale.",
 		"date": "24-05-2022"
+	},
+	{
+		"id": 8,
+		"active": true,
+		"topics": ["react", "javascript", "Chakra UI"],
+		"name": "Previous portfolio",
+		"link": "https://leoda-dev.vercel.app/",
+		"portrait": "",
+		"images": [],
+		"description": "It was my first Portfolio.",
+		"date": "24-05-2022"
 	}
 ]
