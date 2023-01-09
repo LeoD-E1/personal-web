@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"active": false,
-		"topics": ["react", "javascript"],
+		"topics": ["python", "javascript", "HTML", "CSS"],
 		"name": "Gabiteacher",
 		"link": "https://gabiteacher.herokuapp.com/",
 		"portrait": "",
@@ -13,7 +13,7 @@
 	{
 		"id": 2,
 		"active": true,
-		"topics": ["react", "javascript"],
+		"topics": ["HTML", "CSS", "javascript"],
 		"name": "Api-Weather",
 		"link": "https://leoda-apiweather.netlify.app/",
 		"portrait": "https://preview.redd.it/37i7ugj21mf51.jpg?width=3840&format=pjpg&auto=webp&s=5f81f5d1e1c079ce41bed20b2859b5b86f937186",
@@ -35,7 +35,7 @@
 	{
 		"id": 4,
 		"active": true,
-		"topics": ["react", "javascript"],
+		"topics": ["HTML", "CSS", "javascript"],
 		"name": "Vainilla-cart",
 		"link": "https://leoda-ecommerce.netlify.app/",
 		"portrait": "https://s1.1zoom.me/b5050/219/Fast_food_Pizza_Tomatoes_Wood_planks_562796_3840x2160.jpg",
