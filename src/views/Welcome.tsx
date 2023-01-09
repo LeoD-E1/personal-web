@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Welcome = () => {
 	return (
-		<motion.div initial={{ x: -100 }} animate={{ x: 0 }} className='h-screen'>
+		<motion.div initial={{ x: -100 }} animate={{ x: 0 }} className='h-[87vh]'>
 			<div className='h-full layout-container flex justify-around items-center'>
 				<section>
 					<p className='text-2xl'>Hi, i'm</p>
