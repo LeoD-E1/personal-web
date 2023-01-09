@@ -68,7 +68,6 @@ const Works = () => {
 										voluptate nostrum doloribus necessitatibus. A magni est
 										accusamus.
 									</p>
-									<h2 className='text-2xl'>$1299</h2>
 								</div>
 							</a>
 						</div>
