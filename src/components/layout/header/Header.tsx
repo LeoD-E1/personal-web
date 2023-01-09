@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import leodaLogo from '/favicon-leoda.svg';
 import { BarsOutlined } from '@ant-design/icons';
 import Menu from './Menu';
@@ -39,7 +38,7 @@ const Header = () => {
 	return (
 		<>
 			{menu && <Menu setOpen={setMenu} navigation={navbar} />}
-			<header className='w-full sticky z-10 bg-opacity-90 py-7 backdrop-blur'>
+			<header className='w-full sticky bg-opacity-90 py-7 backdrop-blur'>
 				<div className='layout-container flex justify-between items-center'>
 					<img src={leodaLogo} alt='leoda-Logo' className='object-cover' />
 					<section>
