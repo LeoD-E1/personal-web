@@ -62,13 +62,13 @@
 		"link": "https://leoda-giff.vercel.app/",
 		"portrait": "",
 		"images": [],
-		"description": "Giff application created for practice React concepts.",
+		"description": "Giff application created for practice React concepts. Fetch of data from remote API",
 		"date": "24-05-2022"
 	},
 	{
 		"id": 7,
 		"active": true,
-		"topics": ["react", "javascript"],
+		"topics": ["react", "javascript, TailwindCSS"],
 		"name": "Pos Food System",
 		"link": "https://leoda-pos-system.vercel.app/",
 		"portrait": "",

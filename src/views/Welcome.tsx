@@ -19,7 +19,7 @@ const Welcome = () => {
 					<Social />
 				</section>
 				<section className='hidden lg:flex'>
-					<img src={basic} alt='html-css-js' />
+					<img src={basic} alt='html-css-js' className='max-w-xl' />
 				</section>
 			</div>
 		</motion.div>

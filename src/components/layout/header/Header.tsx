@@ -42,7 +42,7 @@ const Header = () => {
 				<div className='layout-container flex justify-between items-center'>
 					<img src={leodaLogo} alt='leoda-Logo' className='object-cover' />
 					<section>
-						<nav className='hidden lg:flex'>
+						<nav className='hidden md:flex'>
 							<ul className='flex justify-around items-center'>
 								{navbar.map(obj => (
 									<li
@@ -63,7 +63,7 @@ const Header = () => {
 								</a>
 							</ul>
 						</nav>
-						<div className='lg:hidden flex m-1'>
+						<div className='md:hidden flex m-1'>
 							<button onClick={() => setMenu(!menu)}>
 								{!menu && <BarsOutlined className='text-orange text-2xl' />}
 							</button>
