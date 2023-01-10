@@ -38,7 +38,7 @@ const Header = () => {
 	return (
 		<>
 			{menu && <Menu setOpen={setMenu} navigation={navbar} />}
-			<header className='w-full sticky bg-opacity-90 py-7 backdrop-blur'>
+			<header className='w-full sticky bg-opacity-90 py-7 backdrop-blur md:border-b md:border-[#EBEBED]'>
 				<div className='layout-container flex justify-between items-center'>
 					<img src={leodaLogo} alt='leoda-Logo' className='object-cover' />
 					<section>
@@ -63,9 +63,9 @@ const Header = () => {
 								</a>
 							</ul>
 						</nav>
-						<div className='md:hidden flex m-1'>
+						<div className='md:hidden rounded-full hover:bg-gray-light p-1'>
 							<button onClick={() => setMenu(!menu)}>
-								{!menu && <BarsOutlined className='text-orange text-2xl' />}
+								{!menu && <BarsOutlined className='text-orange h-5 w-5' />}
 							</button>
 						</div>
 					</section>

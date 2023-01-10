@@ -9,8 +9,8 @@ const Menu = (props: any) => {
 		<>
 			<motion.div
 				className='relative z-10 lg:hidden'
-				animate={{ x: 0 }}
-				initial={false}
+				animate={{ opacity: 1 }}
+				initial={{ opacity: 0 }}
 			>
 				<div className='fixed h-full md:max-w-sm w-full bg-dark-gray shadow-xl flex flex-col overflow-y-auto bg-opacity-90 backdrop-blur'>
 					<CloseCircleOutlined

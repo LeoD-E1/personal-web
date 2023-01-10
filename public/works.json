@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"active": false,
-		"topics": ["python", "javascript", "HTML", "CSS"],
+		"topics": ["python", "Javascript", "HTML", "CSS"],
 		"name": "Gabiteacher",
 		"link": "https://gabiteacher.herokuapp.com/",
 		"portrait": "",
@@ -13,7 +13,7 @@
 	{
 		"id": 2,
 		"active": true,
-		"topics": ["HTML", "CSS", "javascript"],
+		"topics": ["HTML", "CSS", "Javascript"],
 		"name": "Api-Weather",
 		"link": "https://leoda-apiweather.netlify.app/",
 		"portrait": "https://preview.redd.it/37i7ugj21mf51.jpg?width=3840&format=pjpg&auto=webp&s=5f81f5d1e1c079ce41bed20b2859b5b86f937186",
@@ -24,7 +24,7 @@
 	{
 		"id": 3,
 		"active": true,
-		"topics": ["react", "javascript"],
+		"topics": ["React", "Javascript"],
 		"name": " User profile screen",
 		"link": "https://leoda-profile-user.netlify.app/",
 		"portrait": "https://fondosmil.com/fondo/17010.jpg",
@@ -35,18 +35,18 @@
 	{
 		"id": 4,
 		"active": true,
-		"topics": ["HTML", "CSS", "javascript"],
+		"topics": ["HTML", "CSS", "Javascript"],
 		"name": "Vainilla-cart",
 		"link": "https://leoda-ecommerce.netlify.app/",
 		"portrait": "https://s1.1zoom.me/b5050/219/Fast_food_Pizza_Tomatoes_Wood_planks_562796_3840x2160.jpg",
 		"images": [],
-		"description": "A simple cart aplication made with vainilla javascript.",
+		"description": "A simple cart aplication made with vainilla Javascript.",
 		"date": "15-02-2021"
 	},
 	{
 		"id": 5,
 		"active": false,
-		"topics": ["react", "javascript"],
+		"topics": ["React", "Typescript", "TailwindCSS"],
 		"name": "Leoda-shop",
 		"link": "https://leoda-shop.vercel.app/",
 		"portrait": "",
@@ -57,7 +57,7 @@
 	{
 		"id": 6,
 		"active": true,
-		"topics": ["react", "javascript"],
+		"topics": ["React", "Javascript"],
 		"name": "Giff App",
 		"link": "https://leoda-giff.vercel.app/",
 		"portrait": "",
@@ -68,7 +68,7 @@
 	{
 		"id": 7,
 		"active": true,
-		"topics": ["react", "javascript, TailwindCSS"],
+		"topics": ["React", "Javascript", "TailwindCSS"],
 		"name": "Pos Food System",
 		"link": "https://leoda-pos-system.vercel.app/",
 		"portrait": "",
@@ -79,7 +79,7 @@
 	{
 		"id": 8,
 		"active": true,
-		"topics": ["react", "javascript", "Chakra UI"],
+		"topics": ["React", "Javascript", "Chakra UI"],
 		"name": "Previous portfolio",
 		"link": "https://leoda-dev.vercel.app/",
 		"portrait": "",

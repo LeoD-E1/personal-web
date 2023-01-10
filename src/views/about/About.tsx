@@ -8,11 +8,11 @@ const About = () => {
 					<img
 						className='object-cover w-full h-full'
 						src={leoda}
-						alt='leonardo-d-angeli'
+						alt='Leonardo D angeli'
 					/>
 				</div>
 				<div className='w-full flex flex-col md:flex-row justify-center items-center md:w-[50%] text-white bg-dark-gray'>
-					<div className='md:hidden relative w-[200px] h-[200px] flex'>
+					<div className='md:hidden relative w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] flex'>
 						<img
 							className='rounded-full object-cover w-full h-full'
 							src={leoda}
