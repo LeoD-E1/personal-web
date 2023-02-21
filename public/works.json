@@ -70,7 +70,7 @@
 		"active": true,
 		"topics": ["React", "Javascript", "TailwindCSS"],
 		"name": "Pos Food System",
-		"link": "https://leoda-pos-system.vercel.app/",
+		"link": "https://bocadodebarrio.vercel.app/",
 		"portrait": "",
 		"images": [],
 		"description": "It will be a Pos Food System for small food stores, my goal is to have another point of sale.",
@@ -86,5 +86,16 @@
 		"images": [],
 		"description": "It was my first Portfolio.",
 		"date": "24-05-2022"
+	},
+	{
+		"id": 9,
+		"active": true,
+		"topics": ["React", "Typescript", "Material UI"],
+		"name": "Cart Swag Charm Challenge",
+		"link": "https://leoda-react-cart.vercel.app/",
+		"portrait": "",
+		"images": [],
+		"description": "The requirements are: \n 1. be able to remove items, \n 2. change the total price 3. \n copy the figma file",
+		"date": "28-01-2023"
 	}
 ]
