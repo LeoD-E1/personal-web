@@ -33,7 +33,7 @@ const navbar = [
 
 const Header = () => {
 	const resumeUrl =
-		'https://drive.google.com/file/d/15FpVV5xdjEbMlVNqI3FqDxZtJyDPdDqR/view?usp=sharing';
+		'https://drive.google.com/file/d/1PaznV00NIiQ2OAFNpZMoEL3ea-BmEW2q/view?usp=sharing';
 	const [menu, setMenu] = useState<Boolean>(false);
 	return (
 		<>
