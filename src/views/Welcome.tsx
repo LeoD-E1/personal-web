@@ -6,12 +6,7 @@ import { Link } from 'react-router-dom';
 const Welcome = () => {
 	return (
 		<>
-			<motion.div
-				initial={{ y: -100 }}
-				animate={{ y: [0, 50, 0] }}
-				className='h-[87vh] relative'
-			>
-				<div className='absolute flex h-[87vh] bg-night-blue'></div>
+			<motion.div className='h-[100vh] relative'>
 				<div className='h-full layout-container flex justify-around items-center'>
 					<section>
 						<p className='text-2xl'>Hi, i'm</p>

@@ -2,7 +2,7 @@ import leoda from '../../assets/leonardo.jpg';
 
 const About = () => {
 	return (
-		<div className='h-screen'>
+		<section id='about' className='h-screen'>
 			<div className='flex h-full'>
 				<div className='hidden md:block w-[50%] bg-cover bg-center'>
 					<img
@@ -35,7 +35,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

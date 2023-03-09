@@ -12,7 +12,7 @@ const navbar = [
 	{
 		id: 1,
 		title: 'about',
-		link: '/about',
+		link: '#about',
 	},
 	{
 		id: 2,
@@ -38,37 +38,35 @@ const Header = () => {
 	return (
 		<>
 			{menu && <Menu setOpen={setMenu} navigation={navbar} />}
-			<header className='w-full sticky bg-opacity-90 py-7 backdrop-blur md:border-b md:border-[#EBEBED]'>
+			<header className='w-full fixed z-10  bg-opacity-90 py-7  border-b border-[#EBEBED] bg-night-blue'>
 				<div className='layout-container flex justify-between items-center'>
 					<img src={leodaLogo} alt='leoda-Logo' className='object-cover' />
-					<section>
-						<nav className='hidden md:flex'>
-							<ul className='flex justify-around items-center'>
-								{navbar.map(obj => (
-									<li
-										key={obj.id}
-										className='mx-3 text-md text-dark-gray hover:border-b-dark-gray border border-transparent'
-									>
-										<a href={obj.link} className='decoration-slice'>
-											{obj.title}
-										</a>
-									</li>
-								))}
-								<a
-									href={resumeUrl}
-									className='btn-common text-orange border-transparent hover:text-dark-blue'
-									target='_blank'
+					<nav className='hidden md:flex'>
+						<ul className='flex justify-around items-center'>
+							{navbar.map(obj => (
+								<li
+									key={obj.id}
+									className='mx-3 text-md text-white hover:border-b-dark-gray border border-transparent'
 								>
-									My resume
-								</a>
-							</ul>
-						</nav>
-						<div className='md:hidden rounded-full hover:bg-gray-light p-1'>
-							<button onClick={() => setMenu(!menu)}>
-								{!menu && <BarsOutlined className='text-orange h-5 w-5' />}
-							</button>
-						</div>
-					</section>
+									<a href={obj.link} className='decoration-slice'>
+										{obj.title}
+									</a>
+								</li>
+							))}
+							<a
+								href={resumeUrl}
+								className='btn-common text-orange border-transparent hover:text-dark-blue'
+								target='_blank'
+							>
+								My resume
+							</a>
+						</ul>
+					</nav>
+					<div className='md:hidden rounded-full hover:bg-gray-light p-1'>
+						<button onClick={() => setMenu(!menu)}>
+							{!menu && <BarsOutlined className='text-orange h-5 w-5' />}
+						</button>
+					</div>
 				</div>
 			</header>
 		</>
