@@ -27,7 +27,7 @@ const navbar = [
 	{
 		id: 4,
 		title: 'contact',
-		link: '/contact',
+		link: '#contact',
 	},
 ];
 

@@ -37,7 +37,7 @@
 		"active": true,
 		"topics": ["HTML", "CSS", "Javascript"],
 		"name": "Vainilla-cart",
-		"link": "https://leoda-ecommerce.netlify.app/",
+		"link": "https://vanilla-cart.vercel.app/",
 		"portrait": "https://s1.1zoom.me/b5050/219/Fast_food_Pizza_Tomatoes_Wood_planks_562796_3840x2160.jpg",
 		"images": [],
 		"description": "A simple cart aplication made with vainilla Javascript.",
