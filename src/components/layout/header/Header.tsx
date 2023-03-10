@@ -8,26 +8,31 @@ const navbar = [
 		id: 0,
 		title: 'home',
 		link: '/',
+		enabled: true,
 	},
 	{
 		id: 1,
 		title: 'about',
 		link: '#about',
+		enabled: true,
 	},
 	{
 		id: 2,
 		title: 'works',
 		link: '/works',
+		enabled: true,
 	},
 	{
 		id: 3,
-		title: 'skills',
-		link: '/skills',
+		title: 'services',
+		link: '#services',
+		enabled: false,
 	},
 	{
 		id: 4,
 		title: 'contact',
 		link: '#contact',
+		enabled: false,
 	},
 ];
 
@@ -43,16 +48,19 @@ const Header = () => {
 					<img src={leodaLogo} alt='leoda-Logo' className='object-cover' />
 					<nav className='hidden md:flex'>
 						<ul className='flex justify-around items-center'>
-							{navbar.map(obj => (
-								<li
-									key={obj.id}
-									className='mx-3 text-md text-white hover:border-b-dark-gray border border-transparent'
-								>
-									<a href={obj.link} className='decoration-slice'>
-										{obj.title}
-									</a>
-								</li>
-							))}
+							{navbar.map(
+								obj =>
+									obj.enabled && (
+										<li
+											key={obj.id}
+											className='mx-3 text-md text-white hover:border-b-dark-gray border border-transparent'
+										>
+											<a href={obj.link} className='decoration-slice'>
+												{obj.title}
+											</a>
+										</li>
+									)
+							)}
 							<a
 								href={resumeUrl}
 								className='btn-common text-orange border-transparent hover:text-dark-blue'
