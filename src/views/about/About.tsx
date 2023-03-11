@@ -4,7 +4,7 @@ const About = () => {
 	return (
 		<section id='about' className='h-screen'>
 			<div className='flex h-full'>
-				<div className='hidden md:block w-[50%] bg-cover bg-center'>
+				<div className='hidden md:block w-[50%] bg-center'>
 					<img
 						className='object-cover w-full h-full'
 						src={leoda}

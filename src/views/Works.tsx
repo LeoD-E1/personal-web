@@ -2,6 +2,7 @@ import Header from '../components/layout/header/Header';
 import { useEffect, useState } from 'react';
 import Footer from '../components/layout/Footer/Footer';
 import leoda from '../assets/leoda.gif';
+import BackBtn from '../components/BackBtn';
 
 interface Work {
 	id: number;
@@ -45,7 +46,9 @@ const Works = () => {
 
 	return (
 		<>
-			<Header />
+			<header className='pt-5 layout-container'>
+				<BackBtn />
+			</header>
 			<div className='p-2 flex flex-col items-center justify-center'>
 				<div className='max-w-xl grid grid-cols-1 lg:grid-cols-2 gap-4 my-3 lg:max-w-5xl'>
 					<div className='w-full flex justify-center items-center my-4 flex-col'>
