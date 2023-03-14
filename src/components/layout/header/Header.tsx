@@ -43,7 +43,7 @@ const Header = () => {
 	return (
 		<>
 			{menu && <Menu setOpen={setMenu} navigation={navbar} />}
-			<header className='w-full fixed z-10  bg-opacity-90 py-7  border-b border-[#EBEBED] bg-night-blue'>
+			<header className='w-full fixed z-10  bg-opacity-90 py-7  border-b border-[#EBEBED] bg-dark-gray'>
 				<div className='layout-container flex justify-between items-center'>
 					<img src={leodaLogo} alt='leoda-Logo' className='object-cover' />
 					<nav className='hidden md:flex'>

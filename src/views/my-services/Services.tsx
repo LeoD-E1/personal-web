@@ -1,75 +1,61 @@
-import { useState } from 'react';
-import { RightCircleFilled } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
+import {
+	IconDeviceDesktop,
+	IconDeviceMobile,
+	IconServer2,
+} from '@tabler/icons-react';
 
 const Services = () => {
-	const [services] = useState([
+	const iconMeasure = 40;
+	const services = [
 		{
 			title: 'Front-End',
-			icon: <RightCircleFilled />,
+			icon: <IconDeviceDesktop width={iconMeasure} height={iconMeasure} />,
 			description:
-				'Build client-side applications with modern features like SPA and maintain semantic coding style among other best practices. Use modern tech such as React JS, NextJS, TailwindCSS, and Framer motion.',
+				'Build client-side applications with modern features like SPA and maintain semantic coding style among other best practices. Use modern tech such as React JS, TailwindCSS, and Framer motion.',
 		},
 		{
 			title: 'Back-End',
-			icon: <RightCircleFilled />,
+			icon: <IconServer2 width={iconMeasure} height={iconMeasure} />,
 			description:
 				'Build scalable and maintainable server applications using modern stacks such as Node.js, Express, and MongoDB.',
 		},
 		{
 			title: 'Native',
-			icon: <RightCircleFilled />,
+			icon: <IconDeviceMobile width={iconMeasure} height={iconMeasure} />,
 			description:
 				'Use React Native for building simple native mobile applications. RN is modern, fast, cross-platform, and popular.',
 		},
-	]);
+	];
 
 	return (
-		<section className='bg-white dark:bg-gray-900 flex items-center justify-center h-screen flex-col'>
-			<div className='lg:flex lg:items-center'>
-				<div className='max-w-xl space-y-12 lg:w-1/2 flex flex-col '>
-					<div className='flex flex-col items-center '>
-						<h1 className='text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white'>
-							What I Can Do
-						</h1>
-						<h5 className='text-lg'>Service offers</h5>
-					</div>
-
+		<section className='bg-white flex items-center justify-center h-auto min-h-[70vh] flex-col p-10'>
+			<div className='layout-container w-full'>
+				<h1 className='text-2xl font-semibold lg:text-3xl my-10 text-dark-gray'>
+					What I Can Do
+				</h1>
+			</div>
+			<article className='layout-container flex flex-col items-center'>
+				<ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-3 max-w-6xl'>
 					{services.map((service, i) => (
-						<div key={i} className='flex items-start text-sm'>
-							<span className='inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4'>
-								{service.icon}
-							</span>
+						<li
+							key={`service-${service.title}`}
+							className='bg-dark-gray p-6 rounded-lg w-full min-h-[350px] hover:shadow-2xl hover:bg-dark-blue'
+						>
+							<div className='text-white p-2'>
+								{service.icon || service.title + 'icon'}
+							</div>
 
 							<div className='mt-4 md:mx-4 md:mt-0'>
-								<h1 className='text-2xl font-semibold text-gray-700 capitalize dark:text-white'>
+								<h1 className='text-2xl font-semibold text-orange'>
 									{service.title} Apps
 								</h1>
 
-								<p className='mt-3 text-gray-500 dark:text-gray-300'>
-									{service.description}
-								</p>
+								<p className='mt-3 text-md text-gray'>{service.description}</p>
 							</div>
-						</div>
+						</li>
 					))}
-					<div className='flex justify-center'>
-						<Link
-							to='/works'
-							className='btn-common text-dark-gray border-dark-gray'
-						>
-							view more
-						</Link>
-					</div>
-				</div>
-
-				<div className='hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center'>
-					<img
-						className='w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full'
-						src='https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80'
-						alt=''
-					/>
-				</div>
-			</div>
+				</ul>
+			</article>
 		</section>
 	);
 };
